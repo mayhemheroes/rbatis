@@ -150,7 +150,7 @@ pub enum PgTypeKind {
 
 impl PgTypeInfo {
     /// Returns the corresponding `PgTypeInfo` if the OID is a built-in type and recognized by SQLx.
-    pub(crate) fn try_from_oid(oid: Oid) -> Option<Self> {
+    pub fn try_from_oid(oid: Oid) -> Option<Self> {
         PgType::try_from_oid(oid).map(Self)
     }
 
