@@ -1,0 +1,7 @@
+project: rbatis
+target: decode
+
+cmds:
+  - cmd: /decode
+  - cmd: /decode_no_inst @@
+    libfuzzer: false
