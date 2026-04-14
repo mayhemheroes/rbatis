@@ -127,7 +127,7 @@ impl FastDateTime {
     }
 
     pub fn from_timestamp_nano(nano: u128) -> Self {
-        FastDateTime(fastdate::DateTime::from_timestamp_nano(nano))
+        FastDateTime(fastdate::DateTime::from_timestamp_nano(nano as i128))
     }
 }
 
